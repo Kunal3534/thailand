@@ -287,7 +287,7 @@ footer ul{padding-left:16px;margin:8px 0 0;display:grid;gap:2px}
 
 <!-- SPLIT -->
 <section class="panel" id="split" role="tabpanel" aria-labelledby="tab-split">
-  <div class="band"><img src="img/grandpalace.jpg" alt=""><div class="wrap"><div class="kick">Shared expenses · live for all four</div><h2>Who owes what</h2><p>Add what you paid, pick who it's for, and the page works out the fewest transfers to square everyone. Balances in INR; THB converts at the rate below.</p></div></div>
+  <div class="band"><img src="img/grandpalace.jpg" alt=""><div class="wrap"><div class="kick">Shared expenses · saved on the site</div><h2>Who owes what</h2><p>Anyone with the PIN adds what they paid and who it was for. The page works out the fewest transfers to square everyone. Balances in INR; THB converts at the rate below.</p></div></div>
   <div class="wrap content">
     <div id="split-status" class="msg" style="margin-top:10px">Connecting…</div>
     <h2 class="sec">Balances</h2>
@@ -295,10 +295,11 @@ footer ul{padding-left:16px;margin:8px 0 0;display:grid;gap:2px}
     <div class="split-tools">
       <span class="rate">1 THB = <input type="number" step="0.01" id="rate" value="2.85" inputmode="decimal" aria-label="THB to INR rate"> INR</span>
       <span class="msg" id="rate-msg"></span>
+      <button type="button" class="btn ghost" id="pin-change" style="padding:8px 12px;font-size:12px">PIN</button>
     </div>
     <h2 class="sec">Settle up · fewest transfers</h2>
     <div class="settle" id="settle"></div>
-    <div id="ro-note" class="ro" hidden><b>View only on this device.</b> Only Kunal can add entries while the page is shared by public link. Send him the expense on WhatsApp, or he can invite you by email as an editor and switch the public link off, after which everyone can add their own.</div>
+    <div id="pinbox" class="form" hidden><h3>Trip PIN</h3><p class="msg">The four-digit code Kunal shared. Asked once per phone.</p><div class="r3"><input type="password" id="pin-in" inputmode="numeric" maxlength="12" autocomplete="off" aria-label="Trip PIN"><button type="button" class="btn" id="pin-ok">Unlock</button></div></div>
     <div id="forms" hidden>
       <form class="form" id="f-exp" autocomplete="off">
         <h3>Add an expense</h3>
@@ -418,10 +419,13 @@ footer ul{padding-left:16px;margin:8px 0 0;display:grid;gap:2px}
 
 // ---------- SPLIT ----------
 (function(){
+  var API='https://thailand-split.kunal-608.workers.dev';
   var NAMES={k:'Kunal',h:'Hunar',p:'Paarth',d:'Dhiraj'},IDS=['k','h','p','d'];
-  var rate=2.85,expenses=[],payments=[],canWrite=null,db=null,status=document.getElementById('split-status');
+  var state={version:-1,data:{rate:2.85,expenses:[],payments:[]}},status=document.getElementById('split-status'),pin='';
+  try{pin=localStorage.getItem('tbt-pin')||'';}catch(e){}
   var fmt=function(n){return '₹'+Math.round(Math.abs(n)).toLocaleString('en-IN');};
-  var inr=function(x){return x.cur==='THB'?x.amount*rate:x.amount;};
+  var inr=function(x){return x.cur==='THB'?x.amount*(state.data.rate||2.85):x.amount;};
+  var uid=function(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7);};
   function seg(id,multi){var box=document.getElementById(id);box.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){
     if(multi){b.setAttribute('aria-pressed',String(b.getAttribute('aria-pressed')!=='true'));}
     else{box.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});}
@@ -430,16 +434,12 @@ footer ul{padding-left:16px;margin:8px 0 0;display:grid;gap:2px}
   function segVal(id){var b=document.querySelector('#'+id+' button[aria-pressed="true"]');return b?b.dataset.v:null;}
   function segVals(id){return Array.prototype.map.call(document.querySelectorAll('#'+id+' button[aria-pressed="true"]'),function(b){return b.dataset.v;});}
   document.getElementById('e-date').value=new Date().toISOString().slice(0,10);
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 
   function compute(){
-    var net={k:0,h:0,p:0,d:0},missing=false;
-    expenses.forEach(function(e){
-      if(!(e.amount>0)){missing=true;return;}
-      var v=inr(e),who=(e.split||[]).filter(function(i){return NAMES[i];});if(!who.length)return;
-      net[e.paidBy]+=v;who.forEach(function(i){net[i]-=v/who.length;});
-    });
-    payments.forEach(function(p){var v=inr(p);net[p.from]+=v;net[p.to]-=v;});
-    // fewest transfers: greedy largest debtor -> largest creditor
+    var net={k:0,h:0,p:0,d:0},missing=false,E=state.data.expenses,P=state.data.payments;
+    E.forEach(function(e){if(!(e.amount>0)){missing=true;return;}var v=inr(e),who=(e.split||[]).filter(function(i){return NAMES[i];});if(!who.length)return;net[e.paidBy]+=v;who.forEach(function(i){net[i]-=v/who.length;});});
+    P.forEach(function(p){var v=inr(p);net[p.from]+=v;net[p.to]-=v;});
     var deb=[],cre=[];IDS.forEach(function(i){var n=Math.round(net[i]);if(n<-0.5)deb.push([i,-n]);else if(n>0.5)cre.push([i,n]);});
     deb.sort(function(a,b){return b[1]-a[1];});cre.sort(function(a,b){return b[1]-a[1];});
     var tx=[],a=0,b=0;
@@ -447,54 +447,74 @@ footer ul{padding-left:16px;margin:8px 0 0;display:grid;gap:2px}
     return {net:net,tx:tx,missing:missing};
   }
   function render(){
-    var r=compute();
+    var r=compute(),E=state.data.expenses,P=state.data.payments;
+    document.getElementById('rate').value=state.data.rate||2.85;
     document.getElementById('balances').innerHTML=IDS.map(function(i){var n=Math.round(r.net[i]);var cls=n>0?'pos':n<0?'neg':'zero';var st=n>0?'is owed':n<0?'owes':'settled';return '<div><span class="who">'+NAMES[i]+'</span><span class="amt '+cls+'">'+(n<0?'−':'')+fmt(n)+'</span><span class="st">'+st+'</span></div>';}).join('');
     var s=document.getElementById('settle');
-    if(!r.tx.length){s.innerHTML='<div class="tx"><span>'+(expenses.length?'All square.':'No expenses yet.')+'</span></div>';}
-    else{s.innerHTML=r.tx.map(function(t){return '<div class="tx"><span><b>'+NAMES[t.from]+'</b><span class="arr">→</span><b>'+NAMES[t.to]+'</b></span><span class="amt">'+fmt(t.amt)+'</span>'+(canWrite!==false?'<button class="mark" data-from="'+t.from+'" data-to="'+t.to+'" data-amt="'+Math.round(t.amt)+'">Mark as paid</button>':'')+'</div>';}).join('');
-      s.querySelectorAll('.mark').forEach(function(b){b.addEventListener('click',function(){addPayment(b.dataset.from,b.dataset.to,+b.dataset.amt,'INR',b);});});}
-    var rows=[].concat(expenses.map(function(e){return Object.assign({kind:'exp'},e);}),payments.map(function(p){return Object.assign({kind:'pay'},p);}));
+    if(!r.tx.length){s.innerHTML='<div class="tx"><span>'+(E.length?'All square.':'No expenses yet.')+'</span></div>';}
+    else{s.innerHTML=r.tx.map(function(t){return '<div class="tx"><span><b>'+NAMES[t.from]+'</b><span class="arr">→</span><b>'+NAMES[t.to]+'</b></span><span class="amt">'+fmt(t.amt)+'</span><button class="mark" data-from="'+t.from+'" data-to="'+t.to+'" data-amt="'+Math.round(t.amt)+'">Mark as paid</button></div>';}).join('');
+      s.querySelectorAll('.mark').forEach(function(b){b.addEventListener('click',function(){b.disabled=true;b.textContent='Saving…';mutate(function(d){d.payments.push({id:uid(),from:b.dataset.from,to:b.dataset.to,amount:+b.dataset.amt,cur:'INR',date:today(),createdAt:Date.now()});},'Payment recorded.');});});}
+    var rows=[].concat(E.map(function(e){return Object.assign({kind:'exp'},e);}),P.map(function(p){return Object.assign({kind:'pay'},p);}));
     rows.sort(function(x,y){return (y.date||'').localeCompare(x.date||'')||(y.createdAt||0)-(x.createdAt||0);});
     document.getElementById('ledger').innerHTML=rows.length?rows.map(function(x){
       var amt=(x.cur==='THB'?'฿':'₹')+Math.round(x.amount||0).toLocaleString('en-IN')+(x.cur==='THB'?' <span style="color:var(--muted);font-weight:400">≈ '+fmt(inr(x))+'</span>':'');
-      if(x.kind==='pay')return '<div class="exp pay"><span class="tt">'+NAMES[x.from]+' paid '+NAMES[x.to]+'</span><span class="amt">'+amt+'</span><span class="sub">'+(x.date||'')+(x.note?' · '+esc(x.note):'')+(canWrite!==false?'<button data-del="payments/'+x.id+'">Delete</button>':'')+'</span></div>';
+      if(x.kind==='pay')return '<div class="exp pay"><span class="tt">'+NAMES[x.from]+' paid '+NAMES[x.to]+'</span><span class="amt">'+amt+'</span><span class="sub">'+esc(x.date||'')+(x.note?' · '+esc(x.note):'')+'<button data-del="p:'+x.id+'">Delete</button></span></div>';
       var miss=!(x.amount>0);
-      return '<div class="exp'+(miss?' warn':'')+'"><span class="tt">'+esc(x.title||'')+'</span><span class="amt">'+(miss?'amount?':amt)+'</span><span class="sub">'+NAMES[x.paidBy]+' paid · split '+(x.split||[]).map(function(i){return NAMES[i];}).join(', ')+' · '+(x.date||'')+(canWrite!==false?'<button data-edit="'+x.id+'">'+(miss?'Set amount':'Edit amount')+'</button><button data-del="expenses/'+x.id+'">Delete</button>':'')+'</span></div>';
+      return '<div class="exp'+(miss?' warn':'')+'"><span class="tt">'+esc(x.title||'')+'</span><span class="amt">'+(miss?'amount?':amt)+'</span><span class="sub">'+NAMES[x.paidBy]+' paid · split '+(x.split||[]).map(function(i){return NAMES[i];}).join(', ')+' · '+esc(x.date||'')+'<button data-edit="'+x.id+'">'+(miss?'Set amount':'Edit amount')+'</button><button data-del="e:'+x.id+'">Delete</button></span></div>';
     }).join(''):'<div class="exp"><span class="sub">Nothing yet.</span></div>';
-    document.querySelectorAll('#ledger [data-del]').forEach(function(b){b.addEventListener('click',function(){if(b.dataset.armed){db.doc(b.dataset.del).delete().catch(fail);}else{b.dataset.armed='1';b.textContent='Tap again to delete';}});});
+    document.querySelectorAll('#ledger [data-del]').forEach(function(b){b.addEventListener('click',function(){if(!b.dataset.armed){b.dataset.armed='1';b.textContent='Tap again to delete';return;}
+      var k=b.dataset.del.split(':');mutate(function(d){var arr=k[0]==='e'?d.expenses:d.payments;var ix=arr.findIndex(function(x){return x.id===k[1];});if(ix>-1)arr.splice(ix,1);},'Deleted.');});});
     document.querySelectorAll('#ledger [data-edit]').forEach(function(b){b.addEventListener('click',function(){
-      var id=b.dataset.edit,e=expenses.filter(function(x){return x.id===id;})[0];if(!e)return;
-      var row=b.closest('.exp');row.insertAdjacentHTML('beforeend','<form class="sub" style="display:flex;gap:6px;margin-top:6px"><input type="number" step="1" min="0" inputmode="numeric" placeholder="'+(e.cur||'INR')+' amount" style="font:16px var(--body);width:140px;background:var(--soft);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 8px"><button class="btn" style="padding:8px 12px;font-size:12px">Save</button></form>');
+      var id=b.dataset.edit,row=b.closest('.exp');if(row.querySelector('form'))return;
+      row.insertAdjacentHTML('beforeend','<form class="sub" style="display:flex;gap:6px;margin-top:6px"><input type="number" step="1" min="0" inputmode="numeric" placeholder="amount" style="font:16px var(--body);width:140px;background:var(--soft);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:6px 8px"><button class="btn" style="padding:8px 12px;font-size:12px">Save</button></form>');
       var f=row.querySelector('form');f.querySelector('input').focus();
-      f.addEventListener('submit',function(ev){ev.preventDefault();var v=+f.querySelector('input').value;if(!(v>0))return;db.doc('expenses/'+id).update({amount:v}).catch(fail);});
+      f.addEventListener('submit',function(ev){ev.preventDefault();var v=+f.querySelector('input').value;if(!(v>0))return;mutate(function(d){var e=d.expenses.find(function(x){return x.id===id;});if(e)e.amount=v;},'Saved.');});
     });});
-    status.textContent=r.missing?'One expense has no amount yet, so balances are incomplete.':(db?'Live · '+expenses.length+' expenses, '+payments.length+' payments':'');
+    if(state.version>=0)status.textContent=r.missing?'One expense has no amount yet; balances are incomplete.':'Saved on the site · '+E.length+' expenses, '+P.length+' payments';
   }
-  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function fail(e){status.textContent=(e&&e.code==='invalid_argument')?'That write was refused: this device is view-only.':'Could not save ('+(e&&e.code||'error')+'). Try again.';if(e&&e.code==='invalid_argument'){canWrite=false;document.getElementById('forms').hidden=true;document.getElementById('ro-note').hidden=false;render();}}
-  function addPayment(from,to,amt,cur,btn){if(!db)return;if(btn){btn.disabled=true;btn.textContent='Saving…';}
-    db.collection('payments').add({from:from,to:to,amount:amt,cur:cur,date:new Date().toISOString().slice(0,10),createdAt:Date.now()}).then(function(){document.getElementById('p-msg').textContent='Recorded.';}).catch(fail);}
+  function today(){return new Date().toISOString().slice(0,10);}
 
-  document.getElementById('f-exp').addEventListener('submit',function(ev){ev.preventDefault();if(!db)return;
+  // ---- sync ----
+  function load(){if(!API)return Promise.resolve();return fetch(API+'/state',{cache:'no-store'}).then(function(r){return r.json();}).then(function(s){if(s&&s.data){state=s;render();}}).catch(function(){status.textContent='Offline: showing the last numbers this phone saw.';});}
+  function askPin(){return new Promise(function(res){
+    var box=document.getElementById('pinbox');box.hidden=false;var inp=document.getElementById('pin-in');inp.value=pin;inp.focus();
+    document.getElementById('pin-ok').onclick=function(){pin=inp.value.trim();try{localStorage.setItem('tbt-pin',pin);}catch(e){}box.hidden=true;res(pin);};
+  });}
+  function mutate(fn,okMsg,attempt){
+    if(!API){status.textContent='No store configured yet.';return;}
+    var go=function(){
+      var d=JSON.parse(JSON.stringify(state.data));fn(d);
+      return fetch(API+'/state',{method:'PUT',headers:{'content-type':'application/json','x-trip-pin':pin},body:JSON.stringify({version:state.version,data:d})})
+        .then(function(r){return r.json().then(function(j){return {ok:r.ok,code:r.status,j:j};});})
+        .then(function(x){
+          if(x.ok){state=x.j;render();status.textContent=okMsg;return;}
+          if(x.code===401){pin='';try{localStorage.removeItem('tbt-pin');}catch(e){}status.textContent='Wrong PIN.';return askPin().then(function(){return mutate(fn,okMsg,(attempt||0)+1);});}
+          if(x.code===409&&(attempt||0)<2){state=x.j;render();return mutate(fn,okMsg,(attempt||0)+1);}
+          status.textContent='Could not save ('+x.code+'). Try again.';render();
+        }).catch(function(){status.textContent='Network error. Try again.';render();});
+    };
+    if(!pin)return askPin().then(go);
+    return go();
+  }
+
+  document.getElementById('f-exp').addEventListener('submit',function(ev){ev.preventDefault();
     var who=segVals('e-for');if(!who.length){document.getElementById('e-msg').textContent='Pick at least one person.';return;}
-    var b=document.getElementById('e-save');b.disabled=true;
-    db.collection('expenses').add({title:document.getElementById('e-title').value.trim(),amount:+document.getElementById('e-amt').value,cur:segVal('e-cur'),paidBy:segVal('e-paid'),split:who,date:document.getElementById('e-date').value,createdAt:Date.now()})
-      .then(function(){document.getElementById('e-title').value='';document.getElementById('e-amt').value='';document.getElementById('e-msg').textContent='Added.';}).catch(fail).then(function(){b.disabled=false;});});
-  document.getElementById('f-pay').addEventListener('submit',function(ev){ev.preventDefault();var f=segVal('p-from'),to=segVal('p-to');if(f===to){document.getElementById('p-msg').textContent='From and to are the same person.';return;}addPayment(f,to,+document.getElementById('p-amt').value,segVal('p-cur'));document.getElementById('p-amt').value='';});
-  var rateT;document.getElementById('rate').addEventListener('input',function(){var v=+this.value;if(!(v>0))return;rate=v;render();clearTimeout(rateT);if(db&&canWrite!==false){rateT=setTimeout(function(){db.doc('settings/rates').set({thbInr:v}).then(function(){document.getElementById('rate-msg').textContent='Rate saved for everyone.';}).catch(function(){});},800);}});
+    var title=document.getElementById('e-title').value.trim(),amt=+document.getElementById('e-amt').value;if(!title||!(amt>0))return;
+    var rec={id:uid(),title:title,amount:amt,cur:segVal('e-cur'),paidBy:segVal('e-paid'),split:who,date:document.getElementById('e-date').value||today(),createdAt:Date.now()};
+    mutate(function(d){d.expenses.push(rec);},'Added.').then(function(){document.getElementById('e-title').value='';document.getElementById('e-amt').value='';});});
+  document.getElementById('f-pay').addEventListener('submit',function(ev){ev.preventDefault();var f=segVal('p-from'),to=segVal('p-to'),amt=+document.getElementById('p-amt').value;
+    if(f===to){document.getElementById('p-msg').textContent='From and to are the same person.';return;}if(!(amt>0))return;
+    mutate(function(d){d.payments.push({id:uid(),from:f,to:to,amount:amt,cur:segVal('p-cur'),date:today(),createdAt:Date.now()});},'Payment recorded.').then(function(){document.getElementById('p-amt').value='';});});
+  var rateT;document.getElementById('rate').addEventListener('input',function(){var v=+this.value;if(!(v>0))return;state.data.rate=v;render();clearTimeout(rateT);rateT=setTimeout(function(){mutate(function(d){d.rate=v;},'Rate saved for everyone.');},900);});
+  document.getElementById('pin-change').addEventListener('click',function(){askPin();});
 
+  document.getElementById('forms').hidden=false;
   render();
-  if(!(window.claude&&window.claude.use)){status.innerHTML='Live balances run on the claude.ai copy of this page. <a href="https://claude.ai/artifact/TqQSMHC9BbofUgv9MfFQdo#split" style="color:var(--accent);border-bottom:1px solid var(--accent)">Open the live tracker</a>';document.getElementById('ro-note').hidden=true;return;}
-  Promise.all([window.claude.use('db'),window.claude.use('user')]).then(function(r){
-    db=r[0];var user=r[1];
-    if(!db){status.textContent='Sign in to see live balances.';return;}
-    (user?user.can('data.write'):Promise.resolve(null)).then(function(w){canWrite=w;
-      if(w===false){document.getElementById('ro-note').hidden=false;}else{document.getElementById('forms').hidden=false;}
-      render();});
-    db.doc('settings/rates').onSnapshot(function(s){if(s.exists&&s.data().thbInr>0&&!s.metadata.hasPendingWrites){rate=s.data().thbInr;document.getElementById('rate').value=rate;render();}},function(){});
-    db.collection('expenses').onSnapshot(function(s){expenses=s.docs.map(function(d){return Object.assign({id:d.id},d.data());});render();},function(e){status.textContent='Live data unavailable ('+e.code+').';});
-    db.collection('payments').onSnapshot(function(s){payments=s.docs.map(function(d){return Object.assign({id:d.id},d.data());});render();},function(){});
-  });
+  if(!API){status.textContent='Store not connected yet.';return;}
+  load();
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)load();});
+  setInterval(function(){if(!document.hidden&&document.getElementById('split').classList.contains('on'))load();},20000);
+  document.getElementById('tab-split').addEventListener('click',load);
 })();
 </script>
 </body></html>
