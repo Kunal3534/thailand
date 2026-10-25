@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"><Document>
+<name>Thailand Boys Trip · Nov 17–25 2026</name>
+<description>Every place from the trip site. Layers by type. Built Oct 23, 2026.</description>
+<Style id="s-water"><IconStyle><color>ffa1b61f</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-land"><IconStyle><color>ff8acf5f</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-bkkact"><IconStyle><color>ff3c8af2</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-mich"><IconStyle><color>ff553de2</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-bars"><IconStyle><color>ff4aa8c9</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-nights"><IconStyle><color>fff07cb0</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Style id="s-spots"><IconStyle><color>ffada38f</color><scale>1.1</scale><Icon><href>https://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon></IconStyle><LabelStyle><scale>0.9</scale></LabelStyle></Style>
+<Folder><name>Phuket · water</name>
+<Placemark><name>Jet ski, Bang Tao beach</name><description>Operators on the sand in front of the beach clubs. No booking. Two per ski.
+Price: 800–1,100 / 30 min
+Patong 1,000–1,500, Kamala/Bang Tao 800–1,100. Film the ski from every angle before riding, agree price and time, pay after. Patong has the worst damage-claim scams.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.989,98.2892&amp;query_place_id=ChIJH6s1-5A5UDARH6VeybNnz84</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>800–1,100 / 30 min</value></Data></ExtendedData><Point><coordinates>98.2892,7.989,0</coordinates></Point></Placemark>
+<Placemark><name>Surf House Phuket, Kata</name><description>FlowRider standing wave. Works whatever the sea does. 09:00–22:00.
+Price: ~1,040 each, private lane
+Shared hour 1,000–1,280. Private lane ~4,150/h for up to 8: four of you, no queue. Board, instructor, locker included. Bar with the sunset. 4 Soi Pakbang.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8166,98.2997&amp;query_place_id=ChIJK6lqwY0lUDAR5r70pGbAxGw</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>~1,040 each, private lane</value></Data></ExtendedData><Point><coordinates>98.2997,7.8166,0</coordinates></Point></Placemark>
+<Placemark><name>Surf House, Patong</name><description>Second FlowRider, by Bangla. 09:30–midnight.
+Price: 1,000–1,280 / hour
+162/8-11 Thaweewong Rd. Same pricing as Kata; this one for a Patong night.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8957,98.2965&amp;query_place_id=ChIJsx9X4Lw6UDARhpZDduearGs</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,000–1,280 / hour</value></Data></ExtendedData><Point><coordinates>98.2965,7.8957,0</coordinates></Point></Placemark>
+<Placemark><name>Surf lesson, Bang Tao (if swell)</name><description>Bang Tao schools are a walk from the villa. Only if the forecast shows waves; late Nov is flat ~60% of days.
+Price: 1,000–1,500 / 1.5 h
+Check surf-forecast.com for Kata Beach the night before. Phuket Surf +66 93 582 2987, SSS Phuket +66 89 586 9920 (private ~1,500). Bang Tao: Saltwater Dreaming +66 76 390 664 (group 1,400), Talay Surf +66 95 298 8757 (group 1,000). Board only 200–300/h.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.989,98.2892&amp;query_place_id=ChIJH6s1-5A5UDARH6VeybNnz84</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,000–1,500 / 1.5 h</value></Data></ExtendedData><Point><coordinates>98.2892,7.989,0</coordinates></Point></Placemark>
+<Placemark><name>Phuket Wake Park</name><description>Cable wakeboarding, Kathu, 7 km from Patong. Beginner gear free.
+Price: 950 / 2 h
+1 h 750, 2 h 950, 4 h 1,400, day 1,600. 09:00–18:00. Anthem Wake Park closed in 2020; ignore listings.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.9276,98.33&amp;query_place_id=ChIJ_____-8wUDAR3QLmj6CEpvc</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>950 / 2 h</value></Data></ExtendedData><Point><coordinates>98.33,7.9276,0</coordinates></Point></Placemark>
+<Placemark><name>Discover Scuba, Racha (Sunrise Divers)</name><description>Two try-dives, no licence. Clearest water near Phuket. Transfers, gear, lunch in.
+Price: 4,500
+3 try-dives 5,200. Licensed: Racha Yai 2 dives 3,000, Racha Noi + Yai 3 dives 3,900. Snorkeller on the same boat 2,000–2,500. Shop at 269/24 Patak Rd, Karon, +66 84 626 4646. Similan is the upgrade: 3,800–5,650, 05:30 from Khao Lak.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.835,98.2981&amp;query_place_id=ChIJ4-1tHnglUDARxnwrbnEt4A8</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>4,500</value></Data></ExtendedData><Point><coordinates>98.2981,7.835,0</coordinates></Point></Placemark>
+<Placemark><name>Kiteboarding Asia, Rawai</name><description>East-coast kite season starts in November. 2-day beginner course.
+Price: 4,500–6,500
+16/26 Wiset Rd, WhatsApp +66 81 591 4594. Early-season wind is patchy; book Mon 23. Also wingfoil and efoil.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.7952,98.3346&amp;query_place_id=ChIJMShA3DsvUDARb_NNyfhpxB8</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>4,500–6,500</value></Data></ExtendedData><Point><coordinates>98.3346,7.7952,0</coordinates></Point></Placemark>
+<Placemark><name>Parasailing, Kata / Karon / Patong</name><description>5–10 minute flight off the beach. Sold with the jet skis.
+Price: 1,000–1,500
+Agree the price first. Pairs with a lazy Nai Harn or Kata Noi afternoon.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8063,98.299&amp;query_place_id=ChIJR-hNwPElUDARgnRTnE7du3E</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,000–1,500</value></Data></ExtendedData><Point><coordinates>98.299,7.8063,0</coordinates></Point></Placemark>
+<Placemark><name>Phi Phi + Maya Bay speedboat (Rassada Pier)</name><description>Full day with villa pickup (Bang Tao to Rassada ~45 min). Maya Bay: wading only, one hour, 375/hour.
+Price: 900–3,500 + 400 fee
+Pileh lagoon, Viking Cave, Monkey Beach snorkel, Khai Island. Early-departure (07:00) boats beat the crowd. Park fee 400 usually excluded. Most tours include hotel pickup; Rassada is the main pier.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.873,98.4145&amp;query_place_id=ChIJOfGOVgsyUDARNEEFgI14m6Y</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>900–3,500 + 400 fee</value></Data></ExtendedData><Point><coordinates>98.4145,7.873,0</coordinates></Point></Placemark>
+<Placemark><name>Phang Nga Bay sea canoe (James Bond Island)</name><description>Longtail through the karsts, kayak into the hongs, lunch at Koh Panyee. Surakul pier is 35 min from Bang Tao.
+Price: 2,000–2,500 + 300 fee
+10-hour day from Surakul pier (north, past the airport), max 15 per boat. The better pick for a doubtful forecast. +200 pickup from Phuket Town / Bang Tao. Pin is the airport; pickup is from your villa.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=8.105,98.3054&amp;query_place_id=ChIJCQ93jJhIUDAR0DDUaWtBtOU</description><styleUrl>#s-water</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>2,000–2,500 + 300 fee</value></Data></ExtendedData><Point><coordinates>98.3054,8.105,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Phuket · land</name>
+<Placemark><name>Phuket Shooters, Chalong</name><description>The one range session: Sat 21, all four. 40 min from Bang Tao. Passport, 20+.
+Price: ~3,100 for 3 guns
+9mm / .45 / .38 1,250 per 10 rds, .22 1,050, shotgun 1,450. Packages: 9mm + .45 + .22 3,100, with shotgun 3,300, 5-gun 4,950. 12-bay 25 m range. Slot at phuketshooters.com, WhatsApp +66 81 103 2598. Kata 20 min. No alcohol before; instructor, ear and eye protection, insurance included.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8416,98.3563&amp;query_place_id=ChIJt1CAsxgvUDARtG4YS2I944k</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>~3,100 for 3 guns</value></Data></ExtendedData><Point><coordinates>98.3563,7.8416,0</coordinates></Point></Placemark>
+<Placemark><name>Phuket Shooting Range (alt) + karts + ATV</name><description>Bigger, scrappier range on Patak Rd with go-karts, ATV, paintball on site.
+Price: 890–1,190 / 10 rds
+Boards reportedly negotiable. Karts ~990–1,200 per 10 min, ATV 30 min ~1,000. Use this if you want everything in one stop; Phuket Shooters for the cleaner range.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8219,98.333&amp;query_place_id=ChIJk4-gmA0vUDARiCy4iPolqAI</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>890–1,190 / 10 rds</value></Data></ExtendedData><Point><coordinates>98.333,7.8219,0</coordinates></Point></Placemark>
+<Placemark><name>Hanuman World zipline + luge</name><description>16 ziplines, roller, skywalk, lunch, transfers. 3 hours. Last admission 15:00.
+Price: 3,490 (A+)
+B+ 9 lines 2 h 2,990. Ziplines only 16/9/4 lines 2,900/2,200/1,500. 08:00–18:00; luge on site till 21:00. +66 62 979 5533. Not the same as Flying Hanuman in Kathu.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8764,98.3511&amp;query_place_id=ChIJ__bDmCowUDARh6fCkSEYt8U</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>3,490 (A+)</value></Data></ExtendedData><Point><coordinates>98.3511,7.8764,0</coordinates></Point></Placemark>
+<Placemark><name>Phuket Kart Speedway, Kathu</name><description>Two-stroke racing karts; the fast track. 30 min from Patong. 09:00–19:00.
+Price: ~990–1,200 / 10 min
+Get the 125cc kart. Patong Go-Kart Speedway is across the road; Power Drive at JungCeylon is the indoor Patong option. +66 89 728 9712.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.9082,98.3294&amp;query_place_id=ChIJzWUycWgwUDARfKl4-Aw63mM</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>~990–1,200 / 10 min</value></Data></ExtendedData><Point><coordinates>98.3294,7.9082,0</coordinates></Point></Placemark>
+<Placemark><name>Tiger Muay Thai, Chalong</name><description>Drop-in beginner class, gloves on loan. Mon–Sat.
+Price: 700–800
+Beginner slots roughly 10:00 and 17:00; confirm at the desk. Cheaper: Rawai Muay Thai, Dragon, MMA Lab 600; Sasiprapa (Kathu) 400. 7/35 Soi Ta-iad. Closed Sunday.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8561,98.3434&amp;query_place_id=ChIJ2Szrg8gvUDARHJ0m6A8lleU</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>700–800</value></Data></ExtendedData><Point><coordinates>98.3434,7.8561,0</coordinates></Point></Placemark>
+<Placemark><name>Bangla Boxing Stadium, Patong</name><description>Fight nights Fri and Sat, ~20:30 start. Buy on the day.
+Price: 1,200–1,800
+Rawai Boxing Stadium is the cheaper local one at 500–800. Fri 20 after Phi Phi is the slot.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8915,98.3012&amp;query_place_id=ChIJnc9dQok7UDARewnq3fFqry4</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,200–1,800</value></Data></ExtendedData><Point><coordinates>98.3012,7.8915,0</coordinates></Point></Placemark>
+<Placemark><name>Big Buddha (optional)</name><description>Only because it&#x27;s on the way back from Chalong. Reopened Mar 2026.
+Price: Free
+06:00–18:30. Google said closed for a while; it isn&#x27;t. Sarongs provided.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8276,98.3128&amp;query_place_id=ChIJOSmXz2AvUDARXCxlBBs7y38</description><styleUrl>#s-land</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>98.3128,7.8276,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Bangkok · things to do</name>
+<Placemark><name>Rajadamnern Stadium</name><description>Fights every night. Tue 17: Knockout card, first bell 19:00.
+Price: 1,500–4,500
+2nd class 1,500, club 1,800, ringside 2,500, VIP counter with free-flow beer 3,500, VIP lounge 4,500 (door; Klook/GYG cheaper). Wed cards start 18:00. Ten minutes from Yaowarat.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.761,100.5088&amp;query_place_id=ChIJEyraT0CZ4jAREz5xKJKTLDM</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>1,500–4,500</value></Data></ExtendedData><Point><coordinates>100.5088,13.761,0</coordinates></Point></Placemark>
+<Placemark><name>Evolve MMA, EmSphere</name><description>Free trial Muay Thai class, level 9, Sukhumvit. Book ahead, no walk-ins.
+Price: Free trial
++66 2 124 5509. Book the trial online first; the desk turns away drop-ins.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.732,100.5663&amp;query_place_id=ChIJL6YgsKef4jARnZGI7vFa16M</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>Free trial</value></Data></ExtendedData><Point><coordinates>100.5663,13.732,0</coordinates></Point></Placemark>
+<Placemark><name>Wat Arun at sunset (optional)</name><description>The one temple. Ferry 5 THB from Tha Tien, climb before 17:30.
+Price: 200
+Then Eagle Nest for the beer eye-level with the prang. Skip the Grand Palace: 500 THB, dress code, construction next door until Dec 19.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7439,100.4884&amp;query_place_id=ChIJaSv_6gaZ4jARnbiUVn6Z_YY</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>200</value></Data></ExtendedData><Point><coordinates>100.4884,13.7439,0</coordinates></Point></Placemark>
+<Placemark><name>Eagle Nest rooftop, Tha Tien</name><description>Sunset beer facing Wat Arun. Get there by 17:45 for a balcony seat.
+Price: ~200 / drink
+Sala Rattanakosin, 47-49 Soi Tha Tian. 16:00–23:00. Drinks are ordinary; the view isn&#x27;t.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7453,100.491&amp;query_place_id=ChIJjWQMxwWZ4jAR2I7N9cectSg</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>~200 / drink</value></Data></ExtendedData><Point><coordinates>100.491,13.7453,0</coordinates></Point></Placemark>
+<Placemark><name>Loy Krathong, Tha Tien Pier (Nov 24)</name><description>Float a krathong on the river facing Wat Arun, 20:00–23:00.
+Price: 30–150
+ICONSIAM and Asiatique are the bigger riverside options. Dinner cruises sell out weeks ahead; riverside bars don&#x27;t. Sky lanterns restricted in Bangkok.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.746,100.4902&amp;query_place_id=ChIJ-eyyhHyZ4jARotCdwRuntM4</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>30–150</value></Data></ExtendedData><Point><coordinates>100.4902,13.746,0</coordinates></Point></Placemark>
+<Placemark><name>ICONSIAM riverfront</name><description>Loy Krathong&#x27;s biggest riverside crowd. Thipsamai no-queue branch inside.
+Price: Free
+Free shuttle boat from Sathorn pier. 10:00–22:00.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7268,100.5104&amp;query_place_id=ChIJFRjwgc2Z4jAR9JIadoa9YBY</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>100.5104,13.7268,0</coordinates></Point></Placemark>
+<Placemark><name>Asiatique The Riverfront</name><description>Night market on the river, Ferris wheel, Loy Krathong floating point.
+Price: Free
+Free shuttle boat from Sathorn pier 16:00–23:30. 11:00–midnight.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7044,100.5033&amp;query_place_id=ChIJtepc75aY4jARVvgRfYrM38s</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>100.5033,13.7044,0</coordinates></Point></Placemark>
+<Placemark><name>Jodd Fairs Ratchada</name><description>The only big night market open on your Tue/Wed. 17:00–01:00.
+Price: 300–500
+Grilled seafood, the stewed pork ribs with the queue, mango sticky rice from 60. MRT Thailand Cultural Centre. Chatuchak is weekends only; Jodd Fairs Rama 9 closed in 2025.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7679,100.5712&amp;query_place_id=ChIJk31AdLKf4jARXwt8iVGkqwI</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>300–500</value></Data></ExtendedData><Point><coordinates>100.5712,13.7679,0</coordinates></Point></Placemark>
+<Placemark><name>Siam Paragon / MBK</name><description>Last-day shopping. MBK across the road for cheap electronics and tailors.
+Price: —
+Thipsamai branch in Paragon with no wait. House Samyan arthouse cinema is one MRT stop away for the heat.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7461,100.5348&amp;query_place_id=ChIJIeWu482e4jARYymvLJqTQ58</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>—</value></Data></ExtendedData><Point><coordinates>100.5348,13.7461,0</coordinates></Point></Placemark>
+<Placemark><name>House Samyan cinema</name><description>Arthouse cinema, Samyan Mitrtown 5F. Thai and Asian indie, air-conditioned.
+Price: 160
+MRT Sam Yan. Good last-afternoon escape before the night flight.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7337,100.5281&amp;query_place_id=ChIJEVBAcHOZ4jARL4H4gfNG_wE</description><styleUrl>#s-bkkact</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>160</value></Data></ExtendedData><Point><coordinates>100.5281,13.7337,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Michelin Guide 2026</name>
+<Placemark><name>PRU</name><description>★ + Green ★ · Phuket&#x27;s only star, 10 min from the villa. Dinner Tue–Sat, lunch Fri–Sat. Closed Sun–Mon.
+Price: 7,200++
+Order: fixed menu. &#x27;King of the Fruits&#x27; (durian, caviar, sea grapes). Kitchen visit mid-meal. Lunch 4,000++. Book prurestaurant.com, card deposit, 3+ weeks. Thu 19, Fri 20 or Sat 21. Resort chic, no flip-flops. +66 76 683 344.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=8.0385,98.2767&amp;query_place_id=ChIJEzq5U284UDARMU-I3GW73kY</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>7,200++</value></Data></ExtendedData><Point><coordinates>98.2767,8.0385,0</coordinates></Point></Placemark>
+<Placemark><name>Jampa</name><description>Selected · Green ★ · Zero-waste European, 10 min from the villa. Thu–Mon 12:00–22:00. The Monday dinner.
+Price: 1,500–3,000
+Order: the lunchtime &#x27;Jampa Experience&#x27; tasting; à la carte all day. +66 76 342 122.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=8.0394,98.3175&amp;query_place_id=ChIJ6a7A_Sg3UDARGzJfnt-tfeA</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,500–3,000</value></Data></ExtendedData><Point><coordinates>98.3175,8.0394,0</coordinates></Point></Placemark>
+<Placemark><name>Suay Cherngtalay</name><description>Selected · Modern Thai, garden, live music. 10 min from the villa. Daily 16:00–23:00.
+Price: 800–1,500
+Order: grilled lemongrass lamb chops with papaya salsa; crab cakes with Sriracha aioli; foie gras in betel leaf. suayrestaurant.com, +66 93 339 1890.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.9801,98.3294&amp;query_place_id=ChIJdcUpwEA3UDARt5lQ2Zz1Msw</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>800–1,500</value></Data></ExtendedData><Point><coordinates>98.3294,7.9801,0</coordinates></Point></Placemark>
+<Placemark><name>One Chun</name><description>Bib Gourmand · Baba family recipes, Old Town shophouse. Daily 10:00–22:00. Cash only.
+Price: 300–500
+Order: mee hoon gaeng poo (crab curry over rice vermicelli), moo hong (slow-braised pork belly), shrimp relish, fish cakes. 48/1 Thep Krasattri Rd. Call +66 76 355 909 for four; 30-min waits are normal.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8858,98.3907&amp;query_place_id=ChIJifk2AfoxUDAR9AvSboEvBPM</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–500</value></Data></ExtendedData><Point><coordinates>98.3907,7.8858,0</coordinates></Point></Placemark>
+<Placemark><name>Go Benz</name><description>Bib Gourmand · Late-night khao tom. Tue–Sun 17:00–01:30, closed Mon. The after-bars stop.
+Price: 80–150
+Order: khao tom haeng moo krob (dry rice with crispy pork, sells out), kuay jub (rolled noodles in peppery broth), fried fish balls. 163 Krabi Rd. Grab any free seat; no prices posted, ask.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8847,98.3826&amp;query_place_id=ChIJRcVtkOUxUDARpHiTV6ScAww</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>80–150</value></Data></ExtendedData><Point><coordinates>98.3826,7.8847,0</coordinates></Point></Placemark>
+<Placemark><name>Chuan Chim</name><description>Bib Gourmand · Old seafood kitchen, Montri Rd. Mon–Sat 12:00–20:30, closed Sun. Slow kitchen.
+Price: 300–500
+Order: pu pad pong karee (crab with curry powder), crispy fish in red sauce, kai lan with crispy pork. Cash. Expect a long wait for food at peak.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8828,98.3928&amp;query_place_id=ChIJo_5BDPkxUDARYzuQNyDnwf4</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–500</value></Data></ExtendedData><Point><coordinates>98.3928,7.8828,0</coordinates></Point></Placemark>
+<Placemark><name>Mor Mu Dong</name><description>Bib Gourmand · Southern seafood in mangrove pavilions, Chalong. Daily 10:00–21:00. Cards OK.
+Price: 300–500
+Order: the stuffed fried fish (signature), gaeng som pla (sour curry), pla thod khamin (turmeric fried fish), goong pao. Ten minutes from the ranges: lunch on Sat 21. +66 88 766 1634.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8431,98.372&amp;query_place_id=ChIJn6VtJkMuUDARtfC37s0hXuE</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–500</value></Data></ExtendedData><Point><coordinates>98.372,7.8431,0</coordinates></Point></Placemark>
+<Placemark><name>Roti Thaew Nam</name><description>Bib Gourmand · 70-year halal breakfast, Old Town. Daily 07:00–12:00.
+Price: 60–150
+Order: roti with beef curry or massaman chicken; banana-egg roti. Two roti + eggs + massaman ~100.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8848,98.3909&amp;query_place_id=ChIJm6JJmj8xUDARxPheqAqV2YE</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>60–150</value></Data></ExtendedData><Point><coordinates>98.3909,7.8848,0</coordinates></Point></Placemark>
+<Placemark><name>A Pong Mae Sunee</name><description>Bib Gourmand · Coconut crepes off charcoal woks. 09:00–14:00, closed Fri. 5 THB each.
+Price: 20–60
+Soi Soon Uthit off Yaowarat Rd. Queue at opening; it moves fast.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8858,98.3875&amp;query_place_id=ChIJV09hnfoxUDARbsn5xZ5S664</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>20–60</value></Data></ExtendedData><Point><coordinates>98.3875,7.8858,0</coordinates></Point></Placemark>
+<Placemark><name>Go La Hokkien Noodles</name><description>Selected · Charcoal wok, third generation. 11 Kra Rd. Tue–Sun 11:00–20:00.
+Price: 80–150
+Order: mee Hokkien pad with an extra egg; seafood porridge. Thai menu, use Google Lens.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8766,98.3931&amp;query_place_id=ChIJ_6cyMpUxUDARjMvbVZ8z_XU</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>80–150</value></Data></ExtendedData><Point><coordinates>98.3931,7.8766,0</coordinates></Point></Placemark>
+<Placemark><name>O Tao Bang Niao</name><description>Selected · The Phuket-only taro-oyster-egg stir-fry. 362 Phuket Rd. Daily 16:00–23:00.
+Price: 80–150
+Order: o tao, crispy seafood omelette. Thai menu on the wall; point. Also at the Lard Yai stalls on Sunday.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8765,98.3936&amp;query_place_id=ChIJfzDOzAEuUDARs0SbT4gCve8</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>80–150</value></Data></ExtendedData><Point><coordinates>98.3936,7.8765,0</coordinates></Point></Placemark>
+<Placemark><name>Mee Sapam (Khun Yai Chian)</name><description>Selected · Hokkien noodles since 1952, 10 min north of town. Daily 08:00–17:00. Air-con, parking.
+Price: 100–200
+Order: mee sapam with seafood, hoi thod (oyster omelette), Phuket sausage, grass jelly.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.9475,98.3919&amp;query_place_id=ChIJWcw4cVkxUDARYGi8w-ckOJU</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>100–200</value></Data></ExtendedData><Point><coordinates>98.3919,7.9475,0</coordinates></Point></Placemark>
+<Placemark><name>Lard Yai Sunday market</name><description>Street · Thalang Rd, Sun Nov 22 only, 16:00–23:00. Cash / QR.
+Price: 200–400
+O-tao, a-pong, Hokkien mee, loba. Then the Old Town bars.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8847,98.3901&amp;query_place_id=ChIJQwdCFvoxUDAR4XNViLYibc4</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>200–400</value></Data></ExtendedData><Point><coordinates>98.3901,7.8847,0</coordinates></Point></Placemark>
+<Placemark><name>Raya (dropped 2026)</name><description>Not in guide · Dibuk Rd mansion. Still open daily 10:30–22:00, still good. Never had a star despite the blogs.
+Price: 300–600
+Order: crab curry mee hoon, moo hong, tom yum. +66 76 218 155.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8859,98.3909&amp;query_place_id=ChIJEe2E-PYxUDARcfOQB3Woa9w</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–600</value></Data></ExtendedData><Point><coordinates>98.3909,7.8859,0</coordinates></Point></Placemark>
+<Placemark><name>Sorn</name><description>★★★ · #12 Asia · Southern Thai tasting. Sukhumvit 26. Mon–Fri &amp; Sun 18:00–22:00. Closed Sat.
+Price: 6,500++
+Order: fixed menu. Tapi River prawns, Phuket lobster, the crab courses, the rice at the end. Book sornfinesouthern.com, +66 99 081 1119. Nov seats release Oct 25, noon ICT, gone in minutes. Smart casual, long trousers, closed shoes.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7231,100.5685&amp;query_place_id=ChIJWfYJ3QWf4jAR9erXv7kK7sA</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>6,500++</value></Data></ExtendedData><Point><coordinates>100.5685,13.7231,0</coordinates></Point></Placemark>
+<Placemark><name>Sühring</name><description>★★★ · #18 Asia · Modern German tasting, Yen Akat villa. Wed 18:00 only for you; closed Mon–Tue.
+Price: 6,200–8,000++
+Order: fixed menu, family recipes; the duck over the wagyu. Kitchen-counter seats if offered. restaurantsuhring.com, ~60-day window, +66 2 107 2777.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7108,100.5455&amp;query_place_id=ChIJa4FyWkef4jARYosTC995W8U</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>6,200–8,000++</value></Data></ExtendedData><Point><coordinates>100.5455,13.7108,0</coordinates></Point></Placemark>
+<Placemark><name>Potong</name><description>★ · #25 Asia · 20-course Thai-Chinese in a 120-year pharmacy, Chinatown. Closed Wed.
+Price: 6,300++
+Order: fixed. 14-day aged duck, layered pad thai with tiger prawn. Opium bar upstairs after. restaurantpotong.com, 6–8 weeks, +66 82 979 3950. Tue 17 or Tue 24.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7392,100.5085&amp;query_place_id=ChIJd7grWxeZ4jAR8KwClMpGmHo</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>6,300++</value></Data></ExtendedData><Point><coordinates>100.5085,13.7392,0</coordinates></Point></Placemark>
+<Placemark><name>Nusara</name><description>★ · #5 Asia · Rooftop facing Wat Pho. Daily 18:00–23:00. Easiest big table to fit.
+Price: ~5,000++
+Order: fixed. Signature crab curry with prawn crackers, Thai wagyu pad kaprao, the four regional nam prik. nusarabkk.com, +66 97 293 5549, 6–8 weeks.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7457,100.4915&amp;query_place_id=ChIJe_d6d0OZ4jARL0uQgNHQRPI</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>~5,000++</value></Data></ExtendedData><Point><coordinates>100.4915,13.7457,0</coordinates></Point></Placemark>
+<Placemark><name>Nahm</name><description>★ · COMO Metropolitan, Sathon. Daily 18:00–23:30. The one with à la carte, so four can share.
+Price: 3,900++ set
+Order: Heritage 8-course 3,900, or à la carte: gaeng pu bai cha plu (crab curry with betel leaf, 1,350), kua gapi relish (860), tom yum gung (450). OpenTable, 1–3 weeks fine. Long trousers (they lend). Ask for the poolside terrace.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7236,100.5392&amp;query_place_id=ChIJHULm2C-f4jAR-phOAtQVND4</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>3,900++ set</value></Data></ExtendedData><Point><coordinates>100.5392,13.7236,0</coordinates></Point></Placemark>
+<Placemark><name>Le Du</name><description>★ · #36 Asia · Seasonal modern Thai, Silom. Mon–Sat 18:00–23:00.
+Price: 3,900–4,500++
+Order: 4-course 3,900 or 6-course 4,500; add the river prawn. Same chef as Nusara. ledubkk.com, 2–6 weeks.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.725,100.5294&amp;query_place_id=ChIJL7-My9KY4jARzlw1ffk9vo8</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>3,900–4,500++</value></Data></ExtendedData><Point><coordinates>100.5294,13.725,0</coordinates></Point></Placemark>
+<Placemark><name>Samrub Samrub Thai</name><description>★ · Regional Thai tasting, menu rotates every 2 months. Soi Yommarat, Silom. Tue–Sat.
+Price: ~5,000++
+Order: fixed; ask which region is on. Book by Instagram DM only, 4–8 weeks: DM today. Skip the rice-wine pairing.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7269,100.5375&amp;query_place_id=ChIJP-vfELmZ4jARGlXpoG1esoU</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>~5,000++</value></Data></ExtendedData><Point><coordinates>100.5375,13.7269,0</coordinates></Point></Placemark>
+<Placemark><name>Gaggan (doesn&#x27;t fit)</name><description>★ · #3 Asia · Closed Tue and Wed, so it misses every Bangkok day. Listed so nobody wonders.
+Price: ~9,000++
+Booking opens 60 days out at 10:00 ICT. Next time.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7408,100.5676&amp;query_place_id=ChIJi_nHcf-f4jARAI6VOXH0wII</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>~9,000++</value></Data></ExtendedData><Point><coordinates>100.5676,13.7408,0</coordinates></Point></Placemark>
+<Placemark><name>Jay Fai</name><description>★ · Crab omelette. Wed–Sat 09:00–19:30 only. Cash. Paper waitlist before 09:00.
+Price: 1,500–2,500
+Order: kai jeow poo (crab omelette, 1,500), pad kee mao talay (seafood drunken noodles), goong pad pong karee, tom yum haeng, abalone with kai lan. Four share 3–4 dishes. A 4,000 &#x27;special&#x27; omelette exists: confirm 1,500 before she cooks. Some days there&#x27;s no queue at 11:00; others it&#x27;s three hours.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7526,100.5048&amp;query_place_id=ChIJaxq89xaZ4jARQtKhE1uqq9c</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>1,500–2,500</value></Data></ExtendedData><Point><coordinates>100.5048,13.7526,0</coordinates></Point></Placemark>
+<Placemark><name>Krua Apsorn (Sam Sen)</name><description>Bib Gourmand · Home-style Thai, Dusit. Daily 10:00–20:00. The Jay Fai plan B, no wait.
+Price: 250–450
+Order: yellow curry with prawns and crispy lotus root (signature), tom yum, cowslip-flower stir-fry, fried king mackerel, crab omelette at a fraction of Jay Fai&#x27;s price.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7741,100.5063&amp;query_place_id=ChIJ2ayngBOZ4jARqgvyGWQ_aGY</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>250–450</value></Data></ExtendedData><Point><coordinates>100.5063,13.7741,0</coordinates></Point></Placemark>
+<Placemark><name>Pad Thai Fai Ta Lu (Dinso Rd)</name><description>Bib Gourmand · Chef&#x27;s pad thai, Old Town. Daily 10:00–midnight. Cards OK. Small portions.
+Price: 200–500
+Order: smoked pork jowl pad thai, prawns in shell. Five minutes from Thipsamai without the line.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7579,100.5022&amp;query_place_id=ChIJJy7IpBSZ4jARJOWMygJHVfM</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>200–500</value></Data></ExtendedData><Point><coordinates>100.5022,13.7579,0</coordinates></Point></Placemark>
+<Placemark><name>Urai Braised Goose</name><description>Bib Gourmand · Song Wat Rd, Chinatown. 10–13 &amp; 16–19. Night-one stop before Yaowarat.
+Price: 150–300
+Order: han palo (five-spice braised goose, ~250), the meatball soup, the garlicky vinegar dip. Find the auntie to order.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7382,100.5076&amp;query_place_id=ChIJy6QILCCZ4jAR5iOyP7Olb5M</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>150–300</value></Data></ExtendedData><Point><coordinates>100.5076,13.7382,0</coordinates></Point></Placemark>
+<Placemark><name>Rung Rueang Pork Noodles</name><description>Bib Gourmand · Sukhumvit 26, same soi as Sorn and Bar Us. Daily 08:00–17:00.
+Price: 70–150
+Order: dry tom yum egg noodles, tom yum noodle soup, crispy fish skin. Left side walking in; not the lookalike opposite.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7284,100.5707&amp;query_place_id=ChIJMwKZPwGf4jARkgykQtmIoM8</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>70–150</value></Data></ExtendedData><Point><coordinates>100.5707,13.7284,0</coordinates></Point></Placemark>
+<Placemark><name>Somsak Pu Ob</name><description>Bib Gourmand · Crab baked with glass noodles, Thonburi side. Tue–Sun 16:00–21:30. Long waits.
+Price: 200–400
+Order: pu ob woon sen (roe version), boiled cockles while you wait. Arrive at opening or expect 1–3 hours.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7254,100.4954&amp;query_place_id=ChIJLdAHrvqY4jARGxbhVpLijuo</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>200–400</value></Data></ExtendedData><Point><coordinates>100.4954,13.7254,0</coordinates></Point></Placemark>
+<Placemark><name>Nai Ek Roll Noodle</name><description>Bib Gourmand · Yaowarat Soi 9. Guay chub in peppery broth. 07:30–00:30 daily.
+Price: 70–150
+Order: rolled noodle soup with crispy pork and offal; crispy pork rice. Start of the Chinatown crawl.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7401,100.5099&amp;query_place_id=ChIJqf3idSGZ4jAR2rKmc655Qmk</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>70–150</value></Data></ExtendedData><Point><coordinates>100.5099,13.7401,0</coordinates></Point></Placemark>
+<Placemark><name>Thipsamai (dropped 2026)</name><description>Not in guide · Egg-wrapped pad thai next to Jay Fai. Closed Tue. 09:00–midnight.
+Price: 150–250
+Order: pad thai haw kai goong sod, the mandarin orange juice. Branches in Paragon and ICONSIAM have no queue.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7528,100.5048&amp;query_place_id=ChIJxU5YeBaZ4jARvm8EVZYGjGk</description><styleUrl>#s-mich</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>150–250</value></Data></ExtendedData><Point><coordinates>100.5048,13.7528,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Bars · 50 Best &amp; CN Traveller</name>
+<Placemark><name>Bar Us</name><description>#4 World · #6 Asia · Sukhumvit 26. Three-course &#x27;liquid cuisine&#x27; menu. Tue–Sun 18:00. Reserve.
+Price: 500–700 / drink
+us-bar.com, first seating on a weeknight. Beef &amp; onion, boiled egg martini, vetiver negroni. Lime next door for tropical fruit cocktails.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7256,100.5694&amp;query_place_id=ChIJG5QaZUKf4jARMm-GbfMbX4A</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>500–700 / drink</value></Data></ExtendedData><Point><coordinates>100.5694,13.7256,0</coordinates></Point></Placemark>
+<Placemark><name>Dry Wave Cocktail Studio</name><description>#27 World · #4 Asia · Thonglor 13, 2F Sodality. Thailand&#x27;s best bar 2026. Daily 19:00–01:00. Reserve.
+Price: 450–600
+&#x27;What&#x27;s That Sour?&#x27;, &#x27;Tea and Butter&#x27;. Start the Thonglor night here, then Locker Room and Rabbit Hole.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7337,100.5806&amp;query_place_id=ChIJYRzUEACf4jAR5YxPdMHC300</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>450–600</value></Data></ExtendedData><Point><coordinates>100.5806,13.7337,0</coordinates></Point></Placemark>
+<Placemark><name>BKK Social Club</name><description>#30 World · Four Seasons, on the river. Daily 17:00–00:00. Loy Krathong nightcap.
+Price: 550–700
+Buenos Aires salon; Tatler best service in Thailand 2026. Reserve.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.712,100.5103&amp;query_place_id=ChIJLwlh74qZ4jARfZDqGK5qtE4</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>550–700</value></Data></ExtendedData><Point><coordinates>100.5103,13.712,0</coordinates></Point></Placemark>
+<Placemark><name>Lennon&#x27;s</name><description>#7 Asia · Rosewood 30F. 6,000-vinyl listening lounge, DJs. Daily 17:00–00:00. Smart casual.
+Price: 450–650
+SevenRooms. &#x27;Bangkok Beats&#x27; menu: SagoREgroni, Thai milk tea.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7433,100.549&amp;query_place_id=ChIJNVj1ujqf4jARr9d6Pf25rSQ</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>450–650</value></Data></ExtendedData><Point><coordinates>100.549,13.7433,0</coordinates></Point></Placemark>
+<Placemark><name>Bar Sathorn</name><description>#17 Asia · Heritage house beside the W. Daily 14:30–01:00. Third stop on a Sathorn night.
+Price: 400–550
+Skyline Drift, Bangkok Brunch. Good bar snacks.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7221,100.529&amp;query_place_id=ChIJXyOvz1OZ4jARR_a5T-qORL8</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>400–550</value></Data></ExtendedData><Point><coordinates>100.529,13.7221,0</coordinates></Point></Placemark>
+<Placemark><name>Opium</name><description>#25 Asia · Upstairs from Potong, Chinatown. Closed Wed. Smart casual, 2,000 deposit.
+Price: 450–600
+The natural end to the Potong dinner, or a stop on the Chinatown crawl.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7392,100.5085&amp;query_place_id=ChIJ95ecsjyZ4jARLm3_GznbJsc</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>450–600</value></Data></ExtendedData><Point><coordinates>100.5085,13.7392,0</coordinates></Point></Placemark>
+<Placemark><name>GOD (Genius On Drugs)</name><description>#31 Asia · 25/27 Soi Nana. Pull the shaker door handle. Daily 18:00–01:00.
+Price: 400–500
+Pianist Fri–Sun 21:00–23:00. Food-paired cocktails; the Trinity with uni.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7398,100.5144&amp;query_place_id=ChIJY4HIOuOZ4jAR8Wf54456kNg</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>400–500</value></Data></ExtendedData><Point><coordinates>100.5144,13.7398,0</coordinates></Point></Placemark>
+<Placemark><name>Tep Bar</name><description>CN Traveller · Soi Nana. Ya dong infusions, live traditional Thai music. 18:00–00:00. Book.
+Price: 450–600
+Band on the ground floor (loud, Mon and Wed especially); 2F for groups who want to talk.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7397,100.5144&amp;query_place_id=ChIJu-y0lCaZ4jARWaSsGSx4nMc</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>450–600</value></Data></ExtendedData><Point><coordinates>100.5144,13.7397,0</coordinates></Point></Placemark>
+<Placemark><name>Teens of Thailand</name><description>Soi Nana · Gin bar behind a low wooden door. 12:00–01:00.
+Price: 350–450
+Thai tea gin, chrysanthemum G&amp;T. Small; go early.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7399,100.514&amp;query_place_id=ChIJRyBsviaZ4jARj79PNOq0hBI</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>350–450</value></Data></ExtendedData><Point><coordinates>100.514,13.7399,0</coordinates></Point></Placemark>
+<Placemark><name>The Bamboo Bar</name><description>CN Traveller · Mandarin Oriental. Live jazz since 1953. 17:00–01:00. The proper-shoes night.
+Price: 500–700
+Mango sticky rice cocktail. Cigar lounge.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7241,100.5139&amp;query_place_id=ChIJF0QAycSY4jARv3t4vwi1r8A</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>500–700</value></Data></ExtendedData><Point><coordinates>100.5139,13.7241,0</coordinates></Point></Placemark>
+<Placemark><name>Sing Sing Theater</name><description>CN Traveller · Sukhumvit 45. Shanghai-opium-den club, dancing after 23:00. Free entry; book a table.
+Price: 350–500
+Thu–Sat is the crowd.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7283,100.5735&amp;query_place_id=ChIJQyjXvgCf4jAR062iYhX4elc</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>350–500</value></Data></ExtendedData><Point><coordinates>100.5735,13.7283,0</coordinates></Point></Placemark>
+<Placemark><name>Octave Rooftop</name><description>Rooftop · Marriott Sukhumvit 57, 45–49F. Happy hour 17:00–19:00 half price. Sunset 18:15.
+Price: 370–450
+DJ from 20:00. Reserve for the top deck; 1,800 minimum on busy nights.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7235,100.5805&amp;query_place_id=ChIJhxshNqWf4jARgYxEW8hBGcE</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>370–450</value></Data></ExtendedData><Point><coordinates>100.5805,13.7235,0</coordinates></Point></Placemark>
+<Placemark><name>Aether</name><description>Rooftop · new · Dusit Central Park 44F, opened Dec 2025. 360°, house music till 02:00.
+Price: 600 entry incl. 450 credit
+Drinks only, no food. Pay at 42F, lift to 44.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7285,100.5369&amp;query_place_id=ChIJQXprckif4jARQ_SjVuADnMM</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>600 entry incl. 450 credit</value></Data></ExtendedData><Point><coordinates>100.5369,13.7285,0</coordinates></Point></Placemark>
+<Placemark><name>#FindTheLockerRoom</name><description>Speakeasy · 406 Soi Thonglor. Slide the right gym locker. 18:00–01:45. Walk-in.
+Price: 350–450
+Upstairs. Smoke-free.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7333,100.5825&amp;query_place_id=ChIJOTgMUa2f4jARaWNuTejtk04</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>350–450</value></Data></ExtendedData><Point><coordinates>100.5825,13.7333,0</coordinates></Point></Placemark>
+<Placemark><name>Rabbit Hole</name><description>Thonglor · 125 Thonglor. Hidden door, three floors. 19:00–02:00. Walk-in.
+Price: 350–450
+Mexico City, Tokyo. No food.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7298,100.581&amp;query_place_id=ChIJv47qiKyf4jARy55PeaiCrv4</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>350–450</value></Data></ExtendedData><Point><coordinates>100.581,13.7298,0</coordinates></Point></Placemark>
+<Placemark><name>Beam</name><description>Club · 72 Thonglor. House/techno main room, hip-hop room. If the night goes past 01:00.
+Price: Entry varies
+Dress rules at the door (no sandals), no cameras. Lockers.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7348,100.5831&amp;query_place_id=ChIJLdy5_FKe4jARBMDX2-Q5dlg</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>Entry varies</value></Data></ExtendedData><Point><coordinates>100.5831,13.7348,0</coordinates></Point></Placemark>
+<Placemark><name>Sala Saneha</name><description>Best new bar 2026 · Soi Decho, Silom. Wine bar + tiny cinema + bookstore in a heritage house. Closed Tue.
+Price: 300–500
+For the film crew. 18:00–00:00; from 11:00 on weekends.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.7259,100.5256&amp;query_place_id=ChIJF2XPnjuZ4jARgNahporbPN0</description><styleUrl>#s-bars</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>300–500</value></Data></ExtendedData><Point><coordinates>100.5256,13.7259,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Phuket · nights</name>
+<Placemark><name>Illuzion, Bangla Road</name><description>#9 DJ Mag clubs · 21:00–04:00. Free to 2,000 entry; 1,200 open-bar pass. 20+ with ID.
+Price: 1,000–2,500 / night
+Also on Bangla: Sugar Club (hip-hop), Armania, Skylight Rooftop. Beer 100–180, cocktails 200–350. Ignore the touts. Tables from ~8,000.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8934,98.2977&amp;query_place_id=ChIJA4Aqqbw6UDARcgkqgvpCe7I</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,000–2,500 / night</value></Data></ExtendedData><Point><coordinates>98.2977,7.8934,0</coordinates></Point></Placemark>
+<Placemark><name>Catch Beach Club, Bang Tao</name><description>Beach club · On your beach. Arrive 15:00, stay through sunset and the fire show. 07:30–00:00.
+Price: 1,500 bed
+Cabanas from 3,000 part-credited. Book beds in advance. +66 65 348 2017.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.989,98.2892&amp;query_place_id=ChIJH6s1-5A5UDARH6VeybNnz84</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,500 bed</value></Data></ExtendedData><Point><coordinates>98.2892,7.989,0</coordinates></Point></Placemark>
+<Placemark><name>Café del Mar, Kamala</name><description>#37 DJ Mag · Club nights Wed–Sat after 22:00. Saturday after Catch.
+Price: 1,500–3,000 min
+11:00–00:00. Fire and red-light night mode after dark.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.961,98.2839&amp;query_place_id=ChIJcTtP-SA6UDAR2ObfmKVl7Wo</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>1,500–3,000 min</value></Data></ExtendedData><Point><coordinates>98.2839,7.961,0</coordinates></Point></Placemark>
+<Placemark><name>Baba Nest, Sri Panwa</name><description>Sunset · Rooftop ringed by an infinity pool, Cape Panwa. 17:00–20:00. Book and prepay days ahead.
+Price: 2,000–3,000 min
+Mexican-leaning food. Skip if cloudy. +66 76 371 000.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8014,98.4113&amp;query_place_id=ChIJq6ERr8IxUDARekvQXrJjCyQ</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>2,000–3,000 min</value></Data></ExtendedData><Point><coordinates>98.4113,7.8014,0</coordinates></Point></Placemark>
+<Placemark><name>Club No. 43</name><description>Old Town · Phuket&#x27;s first mixology bar. Quiet, precise. 18:00–00:00.
+Price: 300–400
+Order the Sakura. Snacks only.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8844,98.3873&amp;query_place_id=ChIJrU0u7PoxUDARipcI9qY4vak</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–400</value></Data></ExtendedData><Point><coordinates>98.3873,7.8844,0</coordinates></Point></Placemark>
+<Placemark><name>Dibuk House</name><description>Old Town · 10 Yaowarat Rd. Local spirits, R&amp;B. 18:30–01:00, closed Wed. Cash.
+Price: 300–400
+Perfume Ash, Green Harvest. ATM nearby; cards not taken.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8836,98.3874&amp;query_place_id=ChIJA5Bwf_AxUDARqSicRQTw3E0</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>300–400</value></Data></ExtendedData><Point><coordinates>98.3874,7.8836,0</coordinates></Point></Placemark>
+<Placemark><name>Zimplex Mixology Laboratory</name><description>Old Town · Lab-theme shot bar on Phang Nga Rd. Tue–Sun 19:30–23:00. Shots only.
+Price: 200–350
+Reserve 20:00; it&#x27;s small.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8828,98.3982&amp;query_place_id=ChIJfQFJS_IzUDARqK_d-VuSTok</description><styleUrl>#s-nights</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>200–350</value></Data></ExtendedData><Point><coordinates>98.3982,7.8828,0</coordinates></Point></Placemark>
+</Folder>
+<Folder><name>Beaches, sunsets, airports</name>
+<Placemark><name>Promthep Cape</name><description>The classic sunset, but 55 min from Bang Tao. Only if you&#x27;re already south. Car park full by 17:30.
+Price: Free; parking 20
+Walk 8 min out to the cape tip for the quiet spot.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.7618,98.3053&amp;query_place_id=ChIJtZgCJiEmUDARG1q53LLQaAs</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Free; parking 20</value></Data></ExtendedData><Point><coordinates>98.3053,7.7618,0</coordinates></Point></Placemark>
+<Placemark><name>Windmill Viewpoint</name><description>Three minutes from Promthep, half the crowd. Arrive by 16:30.
+Price: Free
+Parking for ~15 cars; roadside works.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.7697,98.3064&amp;query_place_id=ChIJ2fW0mh8mUDARF9QBYA9rLks</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>98.3064,7.7697,0</coordinates></Point></Placemark>
+<Placemark><name>Nai Harn Beach</name><description>Calmest swim in late November, but 55 min south. Surin and Bang Tao are your home beaches now.
+Price: Loungers 100–200
+Kiteboarding Asia is ten minutes away in Rawai.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.7812,98.3117&amp;query_place_id=ChIJv_ZCThwmUDARIcYFtxtWJX4</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Loungers 100–200</value></Data></ExtendedData><Point><coordinates>98.3117,7.7812,0</coordinates></Point></Placemark>
+<Placemark><name>Surin Beach</name><description>Five minutes south of Bang Tao. Cleaner water than Bang Tao itself, no beach clubs, good sunset.
+Price: Free
+Laem Singh viewpoint is just past it on the Kamala road.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.9735,98.278</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>98.278,7.9735,0</coordinates></Point></Placemark>
+<Placemark><name>Kata Noi Beach</name><description>Cleaner, quieter than Kata. Hillside sunset bars. Longtails to Freedom Beach from the left end.
+Price: Free
+Surf House Kata is a ten-minute walk north.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=7.8063,98.299&amp;query_place_id=ChIJR-hNwPElUDARgnRTnE7du3E</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>Free</value></Data></ExtendedData><Point><coordinates>98.299,7.8063,0</coordinates></Point></Placemark>
+<Placemark><name>Phuket Airport (HKT)</name><description>Thu 19 arrival 10:00; Tue 24 departures. 45–60 min to Kata/Patong, 30 to Old Town.
+Price: —
+Ride-hailing pickups are a short walk from the terminal.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=8.1053,98.3054&amp;query_place_id=ChIJCQ93jJhIUDAR0DDUaWtBtOU</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Phuket</value></Data><Data name="price"><value>—</value></Data></ExtendedData><Point><coordinates>98.3054,8.1053,0</coordinates></Point></Placemark>
+<Placemark><name>Suvarnabhumi Airport (BKK)</name><description>Wed 25 night flight. Allow 60–90 min from Sukhumvit by road; Airport Rail Link 30 min to Phaya Thai.
+Price: —
+Arrive 3 hours before an international departure.
+
+Google Maps: https://www.google.com/maps/search/?api=1&amp;query=13.6819,100.7469&amp;query_place_id=ChIJTydCFXdnHTERB3oVT1UZDRI</description><styleUrl>#s-spots</styleUrl><ExtendedData><Data name="city"><value>Bangkok</value></Data><Data name="price"><value>—</value></Data></ExtendedData><Point><coordinates>100.7469,13.6819,0</coordinates></Point></Placemark>
+</Folder>
+</Document></kml>
